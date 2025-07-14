@@ -34,6 +34,6 @@ with st.form(key="form_cadastro"):
             novo_paciente = pd.DataFrame([[nome, cpf, int(idade)]], columns=["Nome", "CPF", "Idade"])
             df_final = pd.concat([existing_data, novo_paciente], ignore_index=True)
             # Atualiza a planilha
-            conn.update(worksheet="cadastrodeclientes", data=df_final)
+            conn.update(worksheet="pagina1", data=df_final)
             st.success("Cadastro realizado com sucesso!")
             st.experimental_rerun()  # Atualiza exibição
