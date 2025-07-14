@@ -3,7 +3,7 @@ from streamlit_gsheets import GSheetsConnection
 import pandas as pd
 
 #display title
-st.title("cadastro medicar web")
+st.title("Cadastro medicar web")
 st.markdown("**Cadastro de pacientes**")
 
 #establishing a google sheet connection
