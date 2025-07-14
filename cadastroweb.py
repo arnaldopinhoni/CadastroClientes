@@ -10,7 +10,7 @@ st.markdown("**Cadastro de pacientes**")
 conn = st.connection("gsheets", type=GSheetsConnection)
 
  # Fetch existing vendors data
-existing_data = conn.read(worksheet="cadastrodeclientes", usecols=list(range(3)), ttl=5)
+existing_data = conn.read(worksheet="pagina1", usecols=list(range(3)), ttl=5)
 existing_data = existing_data.dropna(how='all')  # Remove rows where all elements are NaN
 
 #Formulario de cadastro
