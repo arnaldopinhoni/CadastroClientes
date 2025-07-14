@@ -7,7 +7,7 @@ st.title("cadastro medicar web")
 st.markdown("**Cadastro de pacientes**")
 
 #establishing a google sheet connection
-conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+conn = st.connection("gsheets", type=GSheetsConnection)
 
  # Fetch existing vendors data
 existing_data = conn.read(worksheet="cadastrodeclientes", usecols=list(range(3)), ttl=5)
