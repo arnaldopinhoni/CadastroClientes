@@ -36,4 +36,4 @@ with st.form(key="form_cadastro"):
             # Atualiza a planilha
             conn.update(worksheet="pagina1", data=df_final)
             st.success("Cadastro realizado com sucesso!")
-            st.experimental_rerun()  # Atualiza exibição
+            st.rerun()  # Atualiza exibição
